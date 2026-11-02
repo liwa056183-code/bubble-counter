@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#0F172A">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_bubble_preview"
+        android:contentDescription="الدائرة الصفراء" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="العداد العائم فوق التطبيقات"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="تحقق من إذن الظهور فوق التطبيقات"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#94A3B8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="24dp"
+        android:background="#334155" />
+
+    <!-- التحكم بحجم الدائرة -->
+    <TextView
+        android:id="@+id/tvSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حجم الدائرة: 70 dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FACC15" />
+
+    <SeekBar
+        android:id="@+id/sbSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:max="160"
+        android:min="40"
+        android:progress="70"
+        android:progressTint="#FACC15"
+        android:thumbTint="#FACC15" />
+
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="تشغيل الدائرة المنبثقة"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FACC15" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="إعادة تعيين العداد (0)"
+        android:textSize="14sp"
+        android:textColor="#E2E8F0"
+        android:backgroundTint="#1E293B" />
+
+</LinearLayout>
